@@ -9,7 +9,7 @@ customerUpdate.onshow = function() {
     if (req.status == 200) {
         results = JSON.parse(req.responseText)
         if (results.length == 0)
-            lblMessage.value = "There are no customers in the database."
+            txtaCustomerUpdate.value = "There are no customers in the database."
         else {
             let message = ""
             for (i = 0; i < results.length; i++)
@@ -18,7 +18,7 @@ customerUpdate.onshow = function() {
         }
 
     } else
-        txtCustomerUpdate.value = "Error code: " + req.status
+        txtaCustomerUpdate.value = "Error code: " + req.status
 }
 
 
@@ -35,11 +35,11 @@ btnUpdate.onclick = function() {
                 req = Ajax("https://ormond.creighton.edu/courses/375/ajax-connection.php", "POST", "host=ormond.creighton.edu&user=" + netID + "&pass=" + pw + "&database=" + netID + "&query=" + query)
                 if (req.status == 200)
                     if (req.responseText == 500)
-                        lblUpdate.value = `You have successfully updated ${oldName} to ${newName}.`
+                        lblUpdate.textContent = `You have successfully updated ${oldName} to ${newName}.`
                 else
-                    lblUpdate.value = `There was a problem updating ${oldName} to ${newName}.`
+                    lblUpdate.textContent = `There was a problem updating ${oldName} to ${newName}.`
                 else
-                    lblUpdate.value = `Error: ${req.status}`
+                    lblUpdate.textContent = `Error: ${req.status}`
             }
         }
         
