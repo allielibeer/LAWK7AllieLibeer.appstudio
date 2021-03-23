@@ -1,5 +1,4 @@
 let customerNameDel = inptNameDel.value
-let found = false
 
 
 btnSubmit.onclick=function(){

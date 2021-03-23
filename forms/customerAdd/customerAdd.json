@@ -14,27 +14,72 @@
       "!type": "External",
       "file": [
         "forms",
-        "customerSelect",
+        "customerAdd",
         "Elements",
-        "txtaCustomers.json"
+        "btnSubmit4.json"
       ]
     },
     {
       "!type": "External",
       "file": [
         "forms",
-        "customerSelect",
+        "customerAdd",
         "Elements",
-        "lblMessage.json"
+        "txtaCustomers4.json"
       ]
     },
     {
       "!type": "External",
       "file": [
         "forms",
-        "customerSelect",
+        "customerAdd",
         "Elements",
-        "Textarea2.json"
+        "inptName.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "inptStreet.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "inptState.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "inptZip.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "inptCity.json"
+      ]
+    },
+    {
+      "!type": "External",
+      "file": [
+        "forms",
+        "customerAdd",
+        "Elements",
+        "lblAdd.json"
       ]
     }
   ],
@@ -44,7 +89,7 @@
   "expanded_pmp": null,
   "fullScreen": "true",
   "height": 460,
-  "id": "customerSelect",
+  "id": "customerAdd",
   "language": "JavaScript",
   "left": "0",
   "locked": false,
@@ -52,7 +97,7 @@
   "onhide": "",
   "onkeypress": "",
   "onresize": "",
-  "onshow": "customerSelect.onshow()",
+  "onshow": "",
   "openMode": "none",
   "parentForm": "",
   "position": "absolute",
